@@ -1,0 +1,21 @@
+<html>
+	<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="sprite.jquery.js"></script>
+	</head>
+	<body>
+		<div id="test" style="background:#000;color:#fff;width:100px;height:100px">
+			<div id="test_2" style="background:red;width:20px;height:20px;z-index:100">test</div>
+			hello
+		</div>
+		
+		<div></div>
+		<script>
+			$("#test").sprite({bottom:10,right:20});
+			setTimeout(function(){
+				$("#test_2").sprite({bottom:2,top:10,left:10,right:10});
+			},1000);
+			
+		</script>
+	</body>
+</html>
